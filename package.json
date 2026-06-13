@@ -1,0 +1,16 @@
+{
+  "name": "yoishis-makeover",
+  "version": "1.0.0",
+  "description": "Yoishi's Makeover - Premium Bridal Makeup Portfolio Website",
+  "scripts": {
+    "client-install": "npm install --prefix client",
+    "server-install": "npm install --prefix api",
+    "install-all": "npm run client-install && npm run server-install",
+    "client-dev": "npm run dev --prefix client",
+    "server-dev": "node api/index.js",
+    "dev": "concurrently \"npm run server-dev\" \"npm run client-dev\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
